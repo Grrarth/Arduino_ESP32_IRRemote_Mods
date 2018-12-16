@@ -3,7 +3,7 @@ Quick and dirty patch to get standard Arduino (1.8.5) IRRemote running on your E
 
 The section is here:
 
-#elif defined(ESP32)
+<pre>#elif defined(ESP32)
         // No system LED on ESP32, disable blinking by NOT defining BLINKLED
 
         // avr/interrupt.h is not present
@@ -20,3 +20,4 @@ The section is here:
 
         // Supply own enbleIRIn
 #       undef USE_DEFAULT_ENABLE_IR_IN
+</pre>
