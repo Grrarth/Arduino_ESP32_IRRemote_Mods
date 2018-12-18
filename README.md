@@ -1,4 +1,4 @@
-# Arduino_IRRemote_Mods_ESP32
+# Arduino_ESP32_IRRemote_Mods
 Quick and dirty patch to get standard Arduino (1.8.5) IRRemote running on your ESP32. 
 
 This is by no means the only place that can be used to patch it but is the first I found and edited to make it work.
