@@ -84,17 +84,21 @@
         // avr/interrupt.h is not present
 #       undef HAS_AVR_INTERRUPT_H
 
-	// BEGIN - Grrarth@GitHub - 20181213
+// BEGIN - Grrarth@GitHub - 20181213
 	// Arduino 1.8.5 (ESP32 Selected) will not compile because it needs 
 	// a send pin even though not used due to no IRSend() support
+	// Edit (Grrarth@github - 20190530)
         // 68gt500@github reported errors while trying to compile where I did with the 
         // #define format so I have put both lines here and you can comment out
         // the line that doesn't work for you. If it still diesn't work then try
         // something else.
         //
-	//const int SEND_PIN = 0;       // won't compile for 68gt500@github
-#       define SEND_PIN 0        // won't compile for me
-	// END - Grrarth@GitHub - 20181213
+	// Following line won't compile for 68gt500@github:
+	//const int SEND_PIN = 0; 
+	//
+	// Following line won't compile for me:
+#       define SEND_PIN 0        
+	// END - Grrarth@GitHub - 20181213, 20190530
 
 // Sending not implemented
 #       undef SENDING_SUPPORTED#
