@@ -87,7 +87,13 @@
 	// BEGIN - Grrarth@GitHub - 20181213
 	// Arduino 1.8.5 (ESP32 Selected) will not compile because it needs 
 	// a send pin even though not used due to no IRSend() support
-	const int SEND_PIN = 0;
+        // 68gt500@github reported errors while trying to compile where I did with the 
+        // #define format so I have put both lines here and you can comment out
+        // the line that doesn't work for you. If it still diesn't work then try
+        // something else.
+        //
+	//const int SEND_PIN = 0;       // won't compile for 68gt500@github
+#       define SEND_PIN 0        // won't compile for me
 	// END - Grrarth@GitHub - 20181213
 
 // Sending not implemented
