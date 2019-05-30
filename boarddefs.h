@@ -101,7 +101,7 @@
 	// END - Grrarth@GitHub - 20181213, 20190530
 
 // Sending not implemented
-#       undef SENDING_SUPPORTED#
+#       undef SENDING_SUPPORTED
 
         // Supply own enbleIRIn
 #       undef USE_DEFAULT_ENABLE_IR_IN
